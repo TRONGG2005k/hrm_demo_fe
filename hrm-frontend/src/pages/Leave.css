@@ -1,0 +1,35 @@
+/**
+ * Leave Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * ============================================
+ */
+
+.leave-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.leave-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

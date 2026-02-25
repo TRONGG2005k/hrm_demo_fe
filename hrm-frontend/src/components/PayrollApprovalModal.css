@@ -1,0 +1,159 @@
+/**
+ * ============================================================
+ * PAYROLL APPROVAL MODAL STYLES
+ * ============================================================
+ */
+
+.payroll-approval-form {
+    padding: 0.5rem 0;
+}
+
+/* Thông tin section */
+.approval-info-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.approval-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.approval-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.approval-label {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.approval-value {
+    font-weight: 600;
+    color: #495057;
+}
+
+.total-amount {
+    padding-top: 0.75rem;
+    border-top: 1px dashed #dee2e6;
+}
+
+.approval-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #28a745;
+}
+
+/* Cảnh báo */
+.approval-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.warning-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.approval-warning p {
+    margin: 0;
+    color: #856404;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #495057;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-label.required::after {
+    content: ' *';
+    color: #dc3545;
+}
+
+/* Input styles */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.form-input:disabled,
+.form-textarea:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.form-input.input-error {
+    border-color: #dc3545;
+}
+
+.form-input.input-error:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
+
+/* Error message */
+.error-message {
+    display: block;
+    margin-top: 0.5rem;
+    color: #dc3545;
+    font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .approval-info-section {
+        padding: 1rem;
+    }
+
+    .approval-info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .approval-amount {
+        font-size: 1.1rem;
+    }
+}

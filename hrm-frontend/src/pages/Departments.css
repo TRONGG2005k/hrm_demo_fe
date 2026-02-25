@@ -1,0 +1,46 @@
+/**
+ * Departments Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * ============================================
+ */
+
+.departments-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.department-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Import button styling */
+.import-btn {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .department-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

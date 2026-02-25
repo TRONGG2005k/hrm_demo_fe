@@ -1,0 +1,93 @@
+/**
+ * Users Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * ============================================
+ */
+
+.users-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.user-form select[multiple] {
+    height: 120px;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
+/* ============================================
+ * ROLE CHANGE MODAL STYLES
+ * ============================================ */
+.role-change-form {
+    padding: 8px;
+}
+
+.role-change-info {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #f0f9ff;
+    border: 1px solid #7dd3fc;
+    border-radius: 8px;
+    color: #0369a1;
+}
+
+.role-change-info strong {
+    color: #0c4a6e;
+    font-weight: 600;
+}
+
+.role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.role-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.role-checkbox:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+}
+
+.role-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #3b82f6;
+}
+
+.role-name {
+    font-size: 15px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

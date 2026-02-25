@@ -1,0 +1,37 @@
+/**
+ * Attendance Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * ============================================
+ */
+
+.attendance-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.date-picker {
+    padding: 8px 12px;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

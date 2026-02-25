@@ -1,0 +1,52 @@
+/**
+ * SubDepartments Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * ============================================
+ */
+
+.sub-departments-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.sub-department-form .form-group {
+    margin-bottom: 16px;
+}
+
+/* Import button styling */
+.import-btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+.import-btn:hover {
+    background: var(--gray-50);
+    border-color: var(--gray-400);
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-actions .btn {
+        max-width: 150px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,410 @@
+/**
+ * Employees Page Styles
+ * ============================================
+ * Không sử dụng width: 100vw hoặc width > 100%
+ * Sử dụng max-width để giới hạn nội dung
+ * ============================================
+ */
+
+.employees-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Import button styling */
+.import-btn {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Employee form in modal */
+.employee-form {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.employee-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Disabled input styling */
+.employee-form input:disabled,
+.employee-form input[readonly] {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+    border-color: #d1d5db;
+}
+
+.employee-form input:disabled:hover,
+.employee-form input[readonly]:hover {
+    border-color: #d1d5db;
+}
+
+/* Header actions - wrap on small screens */
+.header-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .employee-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* Debug styles for selected IDs */
+.selected-ids-debug {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #f0f9ff;
+    border: 1px solid #0ea5e9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.selected-ids-debug strong {
+    color: #0369a1;
+}
+
+.selected-ids-debug code {
+    background: #e0f2fe;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #0c4a6e;
+    font-family: monospace;
+}
+
+/* ============================================
+ * FACE REGISTRATION MODAL STYLES
+ * ============================================ */
+.face-registration-form {
+    padding: 8px;
+}
+
+.face-registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.face-registration-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.face-registration-form .file-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.face-registration-form .file-input:hover {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.face-registration-form .help-text {
+    display: block;
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Selected files list */
+.selected-files {
+    margin-bottom: 20px;
+}
+
+.selected-files label {
+    display: block;
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: #f3f4f6;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #4b5563;
+    word-break: break-all;
+}
+
+.btn-remove-file {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+.btn-remove-file:hover {
+    background: #dc2626;
+}
+
+/* Preview section */
+.preview-section {
+    margin-top: 20px;
+}
+
+.preview-section label {
+    display: block;
+    margin-bottom: 12px;
+    color: #374151;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+.preview-item {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button info style */
+.btn-info {
+    background: #0ea5e9;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.btn-info:hover {
+    background: #0284c7;
+}
+
+/* ============================================
+ * BULK FILE UPLOAD RESULT MODAL STYLES
+ * ============================================ */
+.bulk-upload-result {
+    padding: 8px;
+}
+
+/* Summary cards container */
+.result-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* Individual result card */
+.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result-card.total {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid #7dd3fc;
+}
+
+.result-card.success {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 1px solid #86efac;
+}
+
+.result-card.failed {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border: 1px solid #fca5a5;
+}
+
+.result-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.result-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.result-card.total .result-value {
+    color: #0284c7;
+}
+
+.result-card.success .result-value {
+    color: #16a34a;
+}
+
+.result-card.failed .result-value {
+    color: #dc2626;
+}
+
+.result-label {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Error section */
+.error-section {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.error-title {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #991b1b;
+    font-weight: 600;
+}
+
+.error-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.error-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #fecaca;
+    font-size: 14px;
+}
+
+.error-item:last-child {
+    border-bottom: none;
+}
+
+.error-bullet {
+    color: #dc2626;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.error-message {
+    color: #7f1d1d;
+    line-height: 1.5;
+}
+
+/* Success message */
+.success-message {
+    text-align: center;
+    padding: 32px 20px;
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.success-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.success-message p {
+    margin: 0;
+    color: #166534;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive styles for bulk upload */
+@media (max-width: 640px) {
+    .result-summary {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .result-card {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .result-info {
+        align-items: flex-start;
+    }
+
+    .error-list {
+        max-height: 150px;
+    }
+}
+
+/* Disabled button state */
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
