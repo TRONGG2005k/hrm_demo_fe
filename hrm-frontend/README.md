@@ -719,8 +719,8 @@ public class CorsConfig {
 **HRM Development Team**
 
 - 📧 Email: dev@your-company.com
-- 🔗 GitHub: [@your-org](https://github.com/your-org)
-- 🌐 Website: [https://your-company.com](https://your-company.com)
+- 🔗 GitHub: [TRONGG2005k/hrm_demo_fe](https://github.com/TRONGG2005k/hrm_demo_fe)
+- 🌐 Website: [https://hrm-db.duckdns.org](https://hrm-db.duckdns.org)
 
 ---
 
