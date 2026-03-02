@@ -493,7 +493,7 @@ VITE_APP_VERSION=1.0.0
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/hrm-frontend.git
+git clone https://github.com/TRONGG2005k/hrm_demo_fe.git
 cd hrm-frontend
 
 # 2. Install dependencies
@@ -627,7 +627,7 @@ sudo service docker start
 sudo usermod -a -G docker ec2-user
 
 # Clone and deploy
-git clone https://github.com/your-org/hrm-frontend.git
+git clone https://github.com/TRONGG2005k/hrm_demo_fe
 cd hrm-frontend
 docker-compose up -d
 ```
@@ -718,7 +718,7 @@ public class CorsConfig {
 
 **HRM Development Team**
 
-- 📧 Email: dev@your-company.com
+- 📧 Email: tn0061350951@gmail.com
 - 🔗 GitHub: [TRONGG2005k/hrm_demo_fe](https://github.com/TRONGG2005k/hrm_demo_fe)
 - 🌐 Website: [https://hrm-db.duckdns.org](https://hrm-db.duckdns.org)
 
